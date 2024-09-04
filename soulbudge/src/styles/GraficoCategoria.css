@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000&display=swap");
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+:root {
+  --cor-principal: #ff4e00;
+  --cor-secundaria: #ffa73b;
+  --cor-input: rgba(253, 126, 20, 0.38);
+  --branco-principal: #ffffff;
+  --button-hover-color: #c54007fd;
+  --fonte-principal: "Nunito", sans-serif;
+  --box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  --gradiente-principal-inicial: #ff4e00;
+  --gradiente-hover-final: #ff4e00;
+  --positivo: #2ecc71;
+  --negativo: #e74c3c;
+  --black-categoria: #ffffff17;
+  --black-txt: #000000;
+}
+
+.grafico-categoria-container {
+  position: relative;
+  font-family: var(--fonte-principal);
+  background-color: var(--branco-principal);
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  padding: 40px;
+  max-width: 1100px;
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  margin: 40px auto;
+}
+
+.tituloGrafico {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--cor-principal);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.grafico-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.no-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.no-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.no-data-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.no-data-message {
+  font-size: 1.5em;
+  color: var(--cor-principal);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5),
+    -1px -1px 2px rgba(255, 255, 255, 0.3);
+  margin: 0 auto;
+}
+
+.legenda-categorias {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+.legenda-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.cor-quadrado {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.legenda-nome {
+  font-size: 16px;
+  color: var(--black-txt);
+}
+
+.grafico-container {
+  width: 65%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding: 15px;
+  overflow: visible;
+}
+
+.grafico-chart {
+  width: 85%;
+  height: 450px;
+}
+
+.total-centro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 5px;
+  color: var(--gradiente-hover-final);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.total-valor {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.total-texto {
+  font-size: 18px;
+}
+
+.total-centro.positivo .total-valor {
+  color: var(--positivo);
+}
+
+.total-centro.negativo .total-valor {
+  color: var(--negativo);
+}
+
+.detalhes-categorias {
+  width: 45%;
+  border: 2px solid var(--cor-input);
+  background-color: var(--black-categoria);
+  border-radius: 15px;
+  padding: 20px 30px;
+  margin-top: 20px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: var(--box-shadow);
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.detalhes-categorias::-webkit-scrollbar {
+  width: 10px;
+}
+
+.detalhes-categorias::-webkit-scrollbar-track {
+  background: var(--black-categoria);
+}
+
+.detalhes-categorias::-webkit-scrollbar-thumb {
+  background-color: var(--cor-input);
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.detalhes-categorias h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: var(--cor-principal);
+  align-self: left;
+}
+
+.categoria-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.categoria-linha {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.categoria-icon {
+  margin-right: 6px;
+  font-size: 22px;
+}
+
+.categoria-nome {
+  font-size: 20px;
+  font-weight: bold;
+  flex: 1;
+  margin-right: 5px;
+}
+
+.categoria-valor,
+.categoria-porcentagem {
+  font-size: 18px;
+}
+
+.veja-mais {
+  text-align: center;
+  color: var(--branco-principal);
+  cursor: pointer;
+  margin: 10px auto;
+  font-weight: bold;
+  background: linear-gradient(
+    45deg,
+    var(--gradiente-principal-inicial),
+    var(--cor-secundaria)
+  );
+  border: 1px solid var(--cor-input);
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: inline-block;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.veja-mais:hover {
+  background: linear-gradient(
+    45deg,
+    var(--cor-secundaria),
+    var(--gradiente-hover-final)
+  );
+}
+
+@media (max-width: 767px) {
+  .grafico-categoria-container {
+    padding: 20px;
+    margin: 20px auto;
+    min-height: 400px;
+  }
+
+  .tituloGrafico {
+    font-size: 24px;
+  }
+
+  .grafico-conteudo {
+    flex-direction: column;
+  }
+
+  .legenda-categorias {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .grafico-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .grafico-chart {
+    width: 100%;
+    height: 300px;
+  }
+
+  .total-centro {
+    font-size: 18px;
+  }
+
+  .detalhes-categorias {
+    width: 100%;
+    padding: 15px;
+    margin-left: 0;
+  }
+
+  .categoria-nome {
+    font-size: 18px;
+  }
+
+  .veja-mais {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .no-data {
+    padding: 15px;
+  }
+
+  .no-data-image {
+    max-width: 300px;
+  }
+
+  .no-data-message {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .grafico-categoria-container {
+    padding: 50px;
+    margin: 40px auto;
+    min-height: 600px;
+  }
+
+  .tituloGrafico {
+    font-size: 35px;
+  }
+
+  .grafico-conteudo {
+    flex-direction: row;
+  }
+
+  .legenda-categorias {
+    width: 15%;
+    margin-top: 55px;
+  }
+
+  .grafico-container {
+    width: 65%;
+    padding: 15px;
+  }
+
+  .grafico-chart {
+    height: 450px;
+  }
+
+  .total-centro {
+    font-size: 1vw;
+  }
+
+  .detalhes-categorias {
+    width: 45%;
+    padding: 20px 30px;
+    margin-left: 15px;
+  }
+
+  .categoria-nome {
+    font-size: 20px;
+  }
+
+  .veja-mais {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  .no-data {
+    padding: 20px;
+  }
+
+  .no-data-image {
+    max-width: 400px;
+  }
+
+  .no-data-message {
+    font-size: 1.5em;
+  }
+}

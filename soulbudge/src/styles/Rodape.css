@@ -1,0 +1,26 @@
+.rodape {
+  bottom: 0;
+  width: 100%;
+  padding: 20px 20px 0 20px;
+  background-color: #000000;
+}
+
+.rodape p {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.rodape .nav-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}

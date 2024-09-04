@@ -1,0 +1,139 @@
+.painel-ajusteMenu {
+  padding: 30px;
+  font-family: "Nunito", sans-serif;
+  background-color: white;
+  border-radius: 18px;
+  margin: 10px 80px;
+  margin-top: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.painel-tituloDashboard {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #ff4e00;
+}
+
+.painel-seletorMes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.painel-seletorMes label {
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 600;
+}
+
+.painel-seletorMes select {
+  padding: 10px 25px;
+  font-size: 1.1em;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/60/60995.png");
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  background-size: 15px;
+}
+
+.painel-seletorMes select:hover {
+  border-color: #007bff;
+}
+
+.painel-seletorMes select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+.painel-seletorMes select option {
+  padding: 10px;
+  font-size: 1em;
+}
+
+@media (max-width: 600px) {
+  .painel-seletorMes {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .painel-ajusteMenu {
+    margin: 40px;
+  }
+
+  .painel-seletorMes select {
+    width: 100%;
+  }
+}
+
+.painel-dashboard-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.painel-card-link {
+  text-decoration: none;
+  flex: 1 1 280px;
+  max-width: 280px;
+}
+
+.painel-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.painel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.painel-card h3 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
+.painel-card p {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #555;
+  line-height: 1.4;
+}
+
+.painel-card-receita {
+  border: 3px solid #28a745;
+}
+
+.painel-card-despesa {
+  border: 3px solid #dc3545;
+}
+
+.painel-card-balanco-positivo {
+  border: 3px solid #28a745;
+}
+
+.painel-card-balanco-negativo {
+  border: 3px solid #dc3545;
+}
+
+.painel-card-balanco-neutro {
+  border: 3px solid #ffc107;
+}

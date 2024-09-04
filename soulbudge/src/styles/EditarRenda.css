@@ -1,0 +1,76 @@
+.editar-renda-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ff6600;
+  padding: 20px;
+  text-align: center;
+}
+
+.editar-renda-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.editar-renda-title {
+  color: #ff6600;
+}
+
+.form-group-editar-renda {
+  margin-bottom: 15px;
+}
+
+.form-group-editar-renda label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group-editar-renda input,
+.form-group-editar-renda textarea,
+.form-group-editar-renda select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: rgba(253, 126, 20, 0.38);
+}
+
+.form-group-editar-renda .error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .editar-renda-card {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .editar-renda-card {
+    max-width: 600px;
+  }
+}

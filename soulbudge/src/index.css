@@ -1,0 +1,55 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+body {
+  background: linear-gradient(
+    45deg,
+    #ff4e00 33%,
+    #ff6a00 33%,
+    #ff8000 66%,
+    #ffa500 66%,
+    #ffb84d 100%
+  );
+  background-size: 400% 400%;
+  animation: gradientBackground 10s ease infinite;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+    background-size: 200% 200%;
+  }
+  50% {
+    background-position: 100% 50%;
+    background-size: 200% 200%;
+  }
+  100% {
+    background-position: 0% 50%;
+    background-size: 200% 200%;
+  }
+}
+
+html {
+  padding-bottom: 163px;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffa73b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 20px;
+  border: 2px solid rgb(231, 223, 223);
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff4e00;
+}
+

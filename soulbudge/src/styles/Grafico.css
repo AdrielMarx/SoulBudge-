@@ -1,0 +1,67 @@
+.grafico-container {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 300px;
+}
+
+.grafico-flex {
+  display: flex;
+  align-items: flex-start;
+}
+
+.barras-container {
+  display: flex;
+  align-items: flex-end;
+  height: 140px;
+  width: 60px;
+  margin-right: 20px;
+}
+
+.barra {
+  width: 25px;
+  transition: height 0.3s ease;
+}
+
+.barra-receitas {
+  background-color: #4caf50;
+  margin-right: 10px;
+  border-radius: 6px;
+}
+
+.barra-despesas {
+  background-color: #f44336;
+  border-radius: 6px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.info-linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.info-valor {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.moeda {
+  margin-right: 4px;
+}
+
+.positivo {
+  color: #4caf50;
+}
+
+.negativo {
+  color: #f44336;
+}

@@ -1,0 +1,38 @@
+.notificacao-planejamento-card {
+  width: 300px !important;
+  border: 2px solid #ffffff !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+  color: #ffffff !important;
+  text-align: center !important;
+  transition: top 0.1s ease, left 0.1s ease !important;
+}
+
+.notificacao-planejamento-card.piscar {
+  animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+  0% {
+    background-color: #ff0000;
+  }
+  50% {
+    background-color: #ff4e00;
+  }
+  100% {
+    background-color: #ff0000;
+  }
+}
+
+.Botao-Fechar {
+  background-color: transparent !important;
+  border: 2px solid #ffffff !important;
+  color: #ffffff !important;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Botao-Fechar:hover {
+  background-color: #ff4e00 !important;
+  color: #ffffff !important;
+  box-shadow: 0 10px 20px #0000007e !important;
+}

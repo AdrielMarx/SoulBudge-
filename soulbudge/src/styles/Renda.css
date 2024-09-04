@@ -1,0 +1,167 @@
+.container-personalizado {
+  padding: 20px;
+  font-family: "Nunito", sans-serif;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 100px auto;
+  max-width: 1000px;
+}
+
+.titulo-personalizado {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #ff4e00;
+}
+
+.mt-4-personalizado {
+  margin-top: 20px;
+}
+
+.tabela-personalizada {
+  margin-bottom: 30px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.tabela-personalizada th,
+.tabela-personalizada td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.cabecalho-tabela-personalizado {
+  background-color: #ff4e00;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.linha-par-tabela-personalizado {
+  background-color: #f8f8f8;
+}
+
+.linha-hover-tabela-personalizado:hover {
+  background-color: #ffe5d0;
+}
+
+.celula-tabela-personalizada {
+  padding: 15px;
+}
+
+.botao-personalizado {
+  font-size: 1em;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao-personalizado .me-2 {
+  margin-right: 8px;
+}
+
+.botao-sucesso-personalizado {
+  background-color: #28a745;
+  border-color: #28a745;
+  color: white;
+}
+
+.botao-primario-personalizado {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.botao-perigo-personalizado {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+
+.botao-aviso-personalizado {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .container-personalizado {
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 95%;
+  }
+
+  .titulo-personalizado {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  .botao-personalizado {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .tabela-personalizada {
+    font-size: 0.85em;
+  }
+
+  .celula-tabela-personalizada {
+    padding: 8px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .container-personalizado {
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 95%;
+  }
+
+  .titulo-personalizado {
+    font-size: 1.75em;
+    margin-bottom: 25px;
+  }
+
+  .botao-personalizado {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .tabela-personalizada {
+    font-size: 0.9em;
+  }
+
+  .celula-tabela-personalizada {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .container-personalizado {
+    padding: 25px;
+    margin: 50px auto;
+    max-width: 1000px;
+  }
+
+  .titulo-personalizado {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+
+  .botao-personalizado {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .tabela-personalizada {
+    font-size: 1em;
+  }
+
+  .celula-tabela-personalizada {
+    padding: 15px;
+  }
+}

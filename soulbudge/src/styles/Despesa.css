@@ -1,0 +1,154 @@
+.container-despesas {
+    padding: 20px;
+    font-family: "Nunito", sans-serif;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 100px auto;
+    max-width: 1000px;
+}
+
+.titulo-despesas {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #ff4e00;
+}
+
+.botao-despesas {
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-despesas .me-2 {
+    margin-right: 8px;
+}
+
+.botao-sucesso-despesas {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+}
+
+.botao-primario-despesas {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.botao-perigo-despesas {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
+
+.botao-aviso-despesas {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: white;
+}
+
+.tabela-despesas {
+    margin-bottom: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.tabela-despesas th,
+.tabela-despesas td {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.cabecalho-tabela-despesas {
+    background-color: #ff4e00;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.linha-par-tabela-despesas {
+    background-color: #f8f8f8;
+}
+
+.linha-hover-tabela-despesas:hover {
+    background-color: #ffe5d0;
+}
+
+.celula-tabela-despesas {
+    padding: 15px;
+}
+
+.container-acoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 576px) {
+    .container-despesas {
+        padding: 15px;
+        margin: 20px auto;
+        max-width: 95%;
+    }
+
+    .titulo-despesas {
+        font-size: 2em;
+    }
+
+    .botao-despesas {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+
+    .tabela-despesas {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .container-despesas {
+        padding: 20px;
+        margin: 40px auto;
+        max-width: 90%;
+    }
+
+    .titulo-despesas {
+        font-size: 2.2em;
+    }
+
+    .botao-despesas {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+
+    .tabela-despesas {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-despesas {
+        padding: 25px;
+        margin: 60px auto;
+        max-width: 85%;
+    }
+
+    .titulo-despesas {
+        font-size: 2.5em;
+    }
+
+    .botao-despesas {
+        font-size: 1.1em;
+        padding: 12px 18px;
+    }
+
+    .tabela-despesas {
+        font-size: 1.1em;
+    }
+}

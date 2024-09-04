@@ -1,0 +1,38 @@
+name: Deploy to firebase
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: |
+        cd soulbudge
+        npm install
+    - name: Install chartjs-plugin-annotation
+      run: |
+        cd soulbudge
+        npm install chartjs-plugin-annotation
+
+    - name: Build the application
+      run: |
+        cd soulbudge
+        npm run build
+      
+    - name: Deploy to Firebase
+      run: |
+        cd soulbudge
+        npm install -g firebase-tools
+        firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}

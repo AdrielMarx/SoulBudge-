@@ -1,0 +1,108 @@
+.sobre-titulo {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sobre-subtitulo {
+  color: white;
+  text-align: center;
+  margin: 18px;
+}
+
+.sobre-bloco1 {
+  margin-top: 18px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobre-bloco1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.sobre-logo-moeda {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.sobre-bloco2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.sobre-card {
+  border-radius: 20px;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.sobre-card2 {
+  border-radius: 20px;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.sobre-cards-esquerdo,
+.sobre-cards-direito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+.sobre-logo-cifrao {
+  width: 250px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .sobre-bloco1 {
+    flex-direction: row;
+  }
+
+  .sobre-bloco2 {
+    flex-direction: row;
+  }
+
+  .sobre-card,
+  .sobre-card2 {
+    width: 45%;
+    max-width: none;
+  }
+
+  .sobre-logo-moeda,
+  .sobre-logo-cifrao {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sobre-bloco2 {
+    margin-top: 60px;
+  }
+
+  .sobre-cards-esquerdo,
+  .sobre-cards-direito {
+    width: 48%;
+  }
+
+  .sobre-logo-cifrao {
+    width: 250px;
+  }
+}

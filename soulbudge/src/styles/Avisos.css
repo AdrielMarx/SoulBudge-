@@ -1,0 +1,101 @@
+.avisos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .aviso-card {
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .aviso-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .vermelho {
+    background-color: #ff0000;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  
+  .amarelo {
+    background-color: #ffdd00;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+  }
+  
+  .azul {
+    background-color: #89cfe5;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .fechar-aviso {
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    font-weight: bold;
+  }
+  
+  .fechar-aviso:hover {
+    font-size: 23px;
+    color: #ffffff ;
+  }
+  
+  @keyframes piscar {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  .icone-alerta2 {
+    width: 20px !important;
+    height: 20px !important;
+    position: center !important;
+    transform: translate(70px, -50%) !important;
+    animation: piscar 1s infinite !important;
+    background-color: transparent !important;
+  }
+  
+  .botao-pago {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    padding: 0.4rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bolder;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0); 
+  }
+  
+  /* Estilo ao passar o mouse */
+  .botao-pago:hover {
+    background-color: rgba(0, 121, 10, 0.719);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  
